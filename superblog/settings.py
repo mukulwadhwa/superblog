@@ -55,7 +55,7 @@ ROOT_URLCONF = 'superblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/superblogapp/templates/indexhtml'],
+        'DIRS': [os.path.join(BASE_DIR, 'superblogapp/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

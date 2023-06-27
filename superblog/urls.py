@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from superblogapp.views import index
+from superblogapp.views import my_view
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index, name='index'),
+    # path('admin/', admin.site.urls),
+    path('', index, name='ind')
+    # path('my-view/', my_view, name='my-view')
 ]
